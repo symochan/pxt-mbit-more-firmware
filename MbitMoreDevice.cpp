@@ -297,6 +297,8 @@ void MbitMoreDevice::onCommandReceived(uint8_t *data, size_t length) {
 #if MICROBIT_CODAL
       micInUse = ((data[1] == 1) ? true : false);
 #endif // MICROBIT_CODAL
+    } else if ( config == MbitMoreConfig::COMPASS ) {
+      compassInUse = ( (data[1] == 1) ? true : false ) ;
     } else if (config == MbitMoreConfig::TOUCH) {
       int pinIndex = data[1];
       if (pinIndex > 2)

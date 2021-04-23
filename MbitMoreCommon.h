@@ -124,8 +124,9 @@ enum MbitMorePinEvent
  */
 enum MbitMoreConfig
 {
+  COMPASS = 0x00,
   MIC = 0x01, // microphone
-  TOUCH = 0x02
+  TOUCH = 0x02,
 };
 
 /**
